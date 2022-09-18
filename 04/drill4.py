@@ -59,6 +59,7 @@ turtle.pendown()
 turtle.left(90)
 turtle.forward(num)
 turtle.right(90)
+num+=100
 while(count2<5):
     turtle.forward(100)
     turtle.left(90)
