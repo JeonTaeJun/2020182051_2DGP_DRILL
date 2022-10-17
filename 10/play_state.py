@@ -88,8 +88,9 @@ def update():
 
 #render world
 def draw():
+    global num
     clear_canvas()
-    grass.draw()
+    grass.draw()  
     for bot in boy:
         bot.draw()
     update_canvas()

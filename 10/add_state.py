@@ -48,8 +48,9 @@ def handle_events():
                     play_state.boy.append(play_state.Boy())
                     game_framework.pop_state()
                 case pico2d.SDLK_k:
-                    play_state.num -= 1
-                    del play_state.boy[play_state.num]
+                    if play_state.num > 1:
+                        play_state.num -= 1
+                        del play_state.boy[play_state.num]
                     game_framework.pop_state()
 
 
